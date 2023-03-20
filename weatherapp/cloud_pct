@@ -11,13 +11,13 @@
 
 
 
-"cloud_pct": 75,
-"temp": 18,
-"feels_like": 17,
-"humidity": 66,
-"min_temp": 18,
-"max_temp": 19,
-"wind_speed": 3.09,
-"wind_degrees": 260,
-"sunrise": 1679271806,
-"sunset": 1679315362
+cloud_pct= respose.cloud_pct
+temp= respose.temp 
+feels_like= respose.feels_like
+humidity= respose.humidity 
+min_temp= respose.min_temp
+max_temp= respose.max_temp
+wind_speed= respose.wind_speed
+wind_degrees= respose.wind_degrees 
+sunrise= respose.sunrise 
+sunset= respose.sunset
