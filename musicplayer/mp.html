@@ -7,28 +7,71 @@
     <title>Music player</title>
     <link rel="stylesheet" href="mp.css" />
     <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
-    <style>
-      .material-symbols-outlined {
-        font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
-      }
-    </style>
   </head>
   <body>
-    <div class="container">
-      <div class="music-player">
-        <nav>
-          <div class="circle">
-             <span class="material-symbols-outlined"> arrow_back_ios </span>
+    <div class="main">
+      <div class="top_bar">
+        <button onclick="sidebar()">
+          <i class="bx bx-chevron-right"></i>
+        </button>
+        <div class="options">
+          <button><i class="bx bx-music"></i></button>
+          <button><i class="bx bx-volume-low"></i></button>
+          <button><i class="bx bx-edit-alt"></i></button>
+        </div>
+        <button onclick="open_p()"><i class="bx bx-menu"></i></button>
+      </div>
+      <div class="playing_part">
+        <div class="img">
+          <img src="media/istockphoto-1264434301-612x612.jpg" alt="" />
+        </div>
+      </div>
+      <div class="control_part">
+        <div class="song_title">
+          <p>Song Title</p>
+          <p>Artist Name</p>
+        </div>
+        <div class="control_buttons">
+          <div class="range_slider">
+            <input type="range" min="0" max="100" id="slider" value="0" />
+            <p>3:00</p>
           </div>
-          <div class="circle">
-             <span class="material-symbols-outlined"> horizontal_split </span>
+          <div class="main_btns">
+            <button id="previous">
+              <i class="bx bxs-skip-previous-circle"></i>
+            </button>
+            <button id="play_btn"><i class="bx bx-play"></i></button>
+            <button id="previous">
+              <i class="bx bxs-skip-next-circle"></i>
+            </button>
           </div>
-        </nav>
-
-        <img src="media/istockphoto-1264434301-612x612.jpg" class="song-img" alt="">
+        </div>
+      </div>
+      playlist songs
+      <div class="play_list">
+        <div class="p_song">
+          <p id="p_title">song name</p>
+          <p id="p_artist">artist name</p>
+          <button><i class="bx bx-play"></i></button>
+        </div>
+        <div class="p_song">
+          <p id="p_title">song name</p>
+          <p id="p_artist">artist name</p>
+          <button id="active_btn"><i class="bx bx-play"></i></button>
+        </div>
+        <div class="p_song">
+          <p id="p_title">song name</p>
+          <p id="p_artist">artist name</p>
+          <button><i class="bx bx-play"></i></button>
+        </div>
+        <div class="p_song">
+          <p id="p_title">song name</p>
+          <p id="p_artist">artist name</p>
+          <button><i class="bx bx-play"></i></button>
+        </div>
       </div>
     </div>
 
